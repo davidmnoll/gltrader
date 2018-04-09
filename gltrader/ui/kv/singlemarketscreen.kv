@@ -1,0 +1,75 @@
+<SingleMarketScreen>:
+    name: 'singlemarket'
+    info_layout: info_layout
+    action_layout: action_layout
+    notification_layout: notification_layout
+
+
+    GridLayout:
+        orientation: 'vertical'
+        padding:[0, 0, 0, 0]
+        cols:2
+        rows:2
+        size_hint: (1,1)
+
+
+        InformationWindow:
+            info_layout: info_layout
+            size_hint: (1, .2)
+            padding:[0, 0, 0, 0]
+            bar_inactive_color:[.7,.7,.7,.7]
+            bar_width:20
+            scroll_wheel_distance:150
+            scroll_type:['bars','content']
+
+            InformationLayout:
+                canvas.before:
+                    Color:
+                        rgba: [.03, .1, .05, 1]
+                    Rectangle:
+                        pos: self.pos
+                        size: self.parent.size
+                id: info_layout
+                padding:[0, 0, 0, 0]
+                cols:1
+                spacing:10
+                row_default_height: 50
+                size_hint: (1,None)
+
+
+
+        ActionWindow:
+            action_layout: action_layout
+            size_hint: (1, .2)
+            padding:[0, 0, 0, 0]
+            bar_inactive_color:[.7,.7,.7,.7]
+            bar_width:20
+            scroll_wheel_distance:150
+            scroll_type:['bars','content']
+
+            ActionLayout:
+                id: action_layout
+                padding:[0, 0, 20, 0]
+                cols:1
+                spacing:10
+                row_default_height: 30
+                size_hint: (1,None)
+
+
+        NotificationWindow:
+            notification_layout: notification_layout
+            market: None
+            size_hint: (1, .8)
+            padding:[0, 0, 0, 0]
+            bar_inactive_color:[.7,.7,.7,.7]
+            bar_width:20
+            scroll_wheel_distance:150
+            scroll_type:['bars','content']
+
+            NotificationLayout:
+                id: notification_layout
+                padding:[0, 0, 20, 0]
+                cols:1
+                spacing:10
+                row_default_height: 30
+                size_hint: (1,None)

@@ -1,0 +1,38 @@
+{
+    "ratelimit" : 10,  //Time in seconds between "ticks"
+    "datalength" : 2880, //How many "ticks" to store in memory before dropping them
+    "min_volume" : 400, //Minimum volume required to monitor market
+    "show_all" : false, //Whether to monitor all markets
+    "exchange" : {
+        "bittrex" : {
+            "key" : "FFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+            "secret" : "FFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+        }
+    },
+    "do_actions": false ,//If set to true, actions are automatically executed, if false, a button is given
+    "max_trade_amount": 0.0001, //The most that can be traded at 1 time
+    "min_trade_amount" : 0.000001, //The least that can be traded at 1 time
+    "max_trade_total" : 0.00001, //The summed amount of open orders that can be open at a given time per market
+    "trailing_avg_min_length" : 3, //The minimum number of ticks to require before running strategies requiring trailing average info
+    "volume_change_max_threshold" : 0.0001, //The positive change in volume required to trigger the volume-change based strategies
+    "volume_change_min_threshold" : -0.0001, //The negative change in volume required to trigger the volume-change based strategies
+    "currencies" : { //Other options above can be over-ridden here and accessed via "<market-instance>.config"  Markets can be manually turned off or on via the "monitor" key
+        "ANT":{"monitor":true},
+        "BCC":{
+            "monitor":true,
+            "strategies" : { //Currently not doing anything, may use in future
+                "notifyTick" : { "disabled" : true }
+            }
+        },
+        "ETH":{
+            "monitor":true,
+            "min_volume": 1000,
+            "volume_change_max_threshold" : 0.001,
+            "volume_change_min_threshold" : -0.001,
+            "max_trade_amount": 0.00002,
+            "min_trade_amount" : 0.000002,
+            "max_trade_total": 0.00002
+        },
+        "LTC":{"monitor":true}
+    }
+}

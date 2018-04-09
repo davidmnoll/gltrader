@@ -1,0 +1,28 @@
+<TraderScreen>:
+    name: 'trader'
+
+    BoxLayout:
+        padding:[0, 0, 0, 0]
+        size_hint: (1,1)
+
+        TraderWindow:
+            market_table: market_table
+            size_hint: (1, None)
+            padding:[0, 0, 0, 0]
+            bar_inactive_color:[.7,.7,.7,.7]
+            bar_width:20
+            scroll_wheel_distance:150
+            scroll_type:['bars','content']
+
+
+            MarketTable:
+                id: market_table
+                padding:[0, 0, 20, 0]
+                cols:1
+                spacing:10
+                row_default_height: 50
+                size_hint: (1, None)
+
+                NotificationScreenButton:
+
+                MarketTableHeader:
