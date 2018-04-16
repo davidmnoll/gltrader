@@ -1,5 +1,3 @@
-### *in progress*
-
 
 ## Setup Instructions For Mac
 

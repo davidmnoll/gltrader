@@ -1,5 +1,4 @@
 
- *in progress--but should approximately work*
 
 ## Setup Instructions For Windows
 
