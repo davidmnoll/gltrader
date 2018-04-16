@@ -54,7 +54,7 @@
 *Copy config-sample.json file to config.json, open in text editor, and replace keys with bittrex API keys*
 
 
-##To Run:
+## To Run:
 
 #### 1: CD into base directory of install
 
