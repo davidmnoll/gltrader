@@ -19,7 +19,7 @@
 
 #### 2b: Download .zip and extract it as a subfolder of the project folder
 
-## 3: CD into repository directory####
+#### 3: CD into repository directory
 
     cd gltrader
 
