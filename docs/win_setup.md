@@ -14,7 +14,7 @@
     git clone https://github.com/davidmnoll/gltrader
 
 
-#### 3: CD into repository directory####
+#### 3: CD into repository directory
 
     cd gltrader
 
