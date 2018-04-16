@@ -5,9 +5,9 @@ This is a GUI interface for automated crypto trading commissioned by a client.  
 The GUI is built on the Kivy Framework.  It is currently compatible with the Bittrex API.  It uses [Eric Somdahl's bittrex Python API Wrapper](https://github.com/ericsomdahl/python-bittrex) to run API calls and update the GUI.  
 
 
-[Setup / Run instructions for Windows](/docs/win_setup.md)
+[Instructions for Windows](/docs/win_setup.md)
 
-[Setup / Run instructions for Mac](/docs/mac_setup.md)
+[Instructions for Mac](/docs/mac_setup.md)
 
 Screenshots:
 

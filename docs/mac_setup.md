@@ -37,17 +37,17 @@
 
 #### 7: Install requirements
 
-    python -m pip install -r requirements.txt
+    pip install -r requirements.txt
 
-#### 8: Install Kivy Dependencies *https://kivy.org/docs/installation/installation-windows.html*
+#### 8: Install Kivy Dependencies *https://kivy.org/docs/installation/installation-osx.html*
 
-    python -m pip install Cython==0.27.2
+    pip install Cython==0.27.2
 
-    python -m pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
+    pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
 
 #### 9: Install Kivy
 
-    python -m pip install kivy
+    pip install https://github.com/kivy/kivy/archive/master.zip
 
 #### 10: Add keys to config.json
 
@@ -72,7 +72,7 @@
 
 #### 1: CD into base directory of install
 
-cd /path/to/project/dir/gltrader
+    cd /path/to/project/dir/gltrader
 
 #### 2: Activate venv
 
@@ -80,4 +80,4 @@ cd /path/to/project/dir/gltrader
 
 #### 3: Run test command
 
-    python -m nosetests
+    nosetests
