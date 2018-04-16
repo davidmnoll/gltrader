@@ -9,15 +9,10 @@
 
     cd /Path/To/project/dir
 
-#### 2a: Clone github repository & enter username and password
+#### 2: Clone github repository & enter username and password
 
     git clone https://github.com/davidmnoll/gltrader
 
-*Enter Password for Bitbucket when prompted*
-
-***OR***
-
-#### 2b: Download .zip and extract it as a subfolder of the project folder
 
 #### 3: CD into repository directory
 
