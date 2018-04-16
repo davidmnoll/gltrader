@@ -7,7 +7,7 @@
 
 #### 1: CD into desired directory
 
-    cd /Path/To/project/dir
+    cd /path/to/project/dir
 
 #### 2: Clone github repository & enter username and password
 
@@ -58,7 +58,7 @@
 
 #### 1: CD into base directory of install
 
-    cd /path/to/gltrader
+    cd /path/to/project/dir/gltrader
 
 #### 2: Activate venv
 
@@ -72,7 +72,7 @@
 
 #### 1: CD into base directory of install
 
-    cd /path/to/gltrader
+cd /path/to/project/dir/gltrader
 
 #### 2: Activate venv
 
